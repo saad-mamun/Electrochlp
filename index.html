@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,27 +12,33 @@
 </head>
 <body>
 
-    <header class="bg-violet-50">
-        <nav class="container mx-auto flex flex-row h-20 items-center justify-between md:px-6 px-4 ">
-            <div class="flex flex-row items-center md:gap-3 gap-1">
-                <img class="md:w-fit sm:w-7 w-4" src="img/logo.png" alt="">
-                <h1 class="md:text-3xl sm:text-xl text-xs font-bold text-violet-900">Electrochlp</h1>
+<header class="bg-violet-100">
+    <nav class="flex flex-row justify-between items-center px-14 h-16">
+        <a class="flex items-center gap-3 text-2xl font-bold text-violet-900" href="index.html">
+            <img class="w-8" src="img/logo.png" alt="img">ELECTRICAL
+        </a>
+        <div class="dropdown-menu absolute -top-full
+        left-0 w-full  max-lg:bg-violet-100 flex flex-col gap-10 items-center py-3 text-lg font-bold lg:static lg:flex-row lg:justify-between transition-all duration-1000 delay-300">
+            <ul class="flex flex-col lg:flex-row lg:gap-10 lg:ps-32 items-center gap-3">
+                <li><a class="hover:text-violet-700 duration-300 delay-200" href="#home">Home</a></li>
+                <li><a class="hover:text-violet-700 duration-300 delay-200" href="#about">About Us</a></li>
+                <li><a class="hover:text-violet-700 duration-300 delay-200" href="#blog">Blogs</a></li>
+                <li><a class="hover:text-violet-700 duration-300 delay-200" href="#service">Services</a></li>
+                <li><a class="hover:text-violet-700 duration-300 delay-200" href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="flex flex-col lg:flex-row lg:gap-6 items-center gap-3">
+                <button>Login</button>
+                <button class="py-1 px-5 bg-orange-600 rounded-lg text-white">Sign UP</button>
             </div>
-            <div>
-                <ul class="flex flex-row lg:gap-8 md:gap-5 gap-2 md:text-lg text-[13px] font-medium">
-                    <li><a class="hover:text-violet-900 transition-all duration-300 hover:border-b-[2px] hover:border-b-violet-900" href="#">Home</a></li>
-                    <li><a class="hover:text-violet-900 transition-all duration-300 hover:border-b-[2px] hover:border-b-violet-900" href="#">About</a></li>
-                    <li><a class="hover:text-violet-900 transition-all duration-300 hover:border-b-[2px] hover:border-b-violet-900" href="#">Service</a></li>
-                    <li><a class="hover:text-violet-900 transition-all duration-300 hover:border-b-[2px] hover:border-b-violet-900" href="#">Blog</a></li>
-                    <li><a class="hover:text-violet-900 transition-all duration-300 hover:border-b-[2px] hover:border-b-violet-900" href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
+        </div>
+        <div class="toggle-btn text-violet-900  lg:hidden">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+    </nav>
+</header>
     <!-- home section -->
 
-    <section class="bg-violet-50 pb-20">
+    <section id="home" class="bg-violet-50 pb-20">
         <div class=" container mx-auto md:px-5 px-5 flex md:flex-row flex-col items-center justify-between md:gap-x-0 gap-y-7 md:pt-52 pt-10">
             <div>
                 <h1 class="font-bold md:text-5xl text-2xl ">  ELECTRICAL <br>
@@ -54,7 +60,7 @@
 
     <!-- Service -->
 
-    <section>
+    <section id="service">
             <div>
                 <h1 class="flex flex-row  items-center gap-4 md:text-5xl text-xl font-bold justify-center md:py-16 py-7">Our Services
                     <img src="img/plug.png" alt="">
@@ -98,7 +104,7 @@
     </section>
 <!-- About Us -->
 
-<section class="bg-violet-50">
+<section id="about" class="bg-violet-50">
     <div class="container mx-auto md:py-16 md:px-5 px-5 md:pb-4 pb-7 flex md:flex-row flex-col items-center justify-between gap-12">
         <div class="flex flex-col gap-6 items-start">
             <h1 class="text-4xl font-semibold pt-10 flex flex-row items-center gap-3">About Us
@@ -120,14 +126,14 @@
 
 <!-- Blog section -->
 
-<section>
+<section id="blog">
     <div class="flex flex-row justify-center md:py-16 py-3">
         <h1 class="md:text-5xl text-2xl font-bold flex flex-row items-center gap-5 ">Blog
             <img src="img/plug.png" alt="">
         </h1>
     </div>
 
-    <div class="container mx-auto flex md:flex-row flex-col items-center justify-center gap-8 md:px-5 px-7  mb:pb-16 pb-6">
+    <div class="container mx-auto flex md:flex-row flex-col items-center justify-center gap-8 md:px-5 px-7  mb:pb-16 pb-8">
         <div>
             <img class="" src="img/blog1.jpg" alt="img">
             <div class=" pt-4 pb-8">
@@ -151,7 +157,7 @@
 
 <!-- Contact Us -->
 
-<section>
+<section id="contact">
     <div class="flex flex-row items-center justify-center md:pb-14 pb-5">
         <h1 class="md:text-4xl text-2xl font-bold flex flex-row items-center gap-3">Contact Us
             <img src="img/plug.png" alt="">
@@ -213,6 +219,12 @@
  <div class="">
     <h1 class="md:py-2 md:text-lg text-xs py-1 whitespace-nowrap text-center">© 2045 All Rights Reserved. By HTML Design</h1>
  </div>
+
+
+
+
+ <script src="script.js"></script>
+
 
 </body>
 </html>
