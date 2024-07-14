@@ -13,7 +13,7 @@
 <body>
 
 <header class="bg-violet-100">
-    <nav class="flex flex-row justify-between items-center px-14 h-16">
+    <nav class="flex flex-row justify-between items-center md:px-14 px-7 h-16">
         <a class="flex items-center gap-3 text-2xl font-bold text-violet-900" href="index.html">
             <img class="w-8" src="img/logo.png" alt="img">ELECTRICAL
         </a>
@@ -223,7 +223,13 @@
 
 
 
- <script src="script.js"></script>
+ <script>
+    const toggleBtn = document.querySelector(".toggle-btn");
+const dropdown = document.querySelector(".dropdown-menu")
+toggleBtn.addEventListener("click", () => {
+    dropdown.classList.toggle('top-16')
+})
+ </script>
 
 
 </body>
